@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>passby</title>
+	<!--&#91;if lt IE 9&#93;>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<!&#91;endif&#93;-->
+
+</head>
+<body>
+	<h1>すれちがい検索</h1>
+
+	<section>
+	<form action="">
+		<p><label for="uid">ユーザ番号：</label>
+		<input type="text" name="uid" id="uid" required> さんのすれちがい</p>
+
+		<p><label for="date">日付：</label>
+		<input type="date" name="date" id="date" required></p>
+
+		<p><label for="times">回数：</label>
+		<input type="number" name="times" id="times"> 〜</p>
+
+		<p><label for="with">相手：</label>
+		<input type="number" name="with" id="with"> を含む</p>
+
+		<p><input type="submit" name="submit" value="絞り込む"></p>
+	</form>
+	</section>
+
+	<section>
+	<table id="table">
+		<thead><tr><th>時刻</th><th>相手</th></tr></thead>
+		<!-- これより下はcsvから読み込むようにしてください -->
+		<tbody><tr><td>2016/12/05 09:00:00</td><td>5</td></tr></tbody>
+	</table>
+	</section>
+
+</body>
+</html>

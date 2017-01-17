@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>user registration</title>
+  <!--&#91;if lt IE 9&#93;>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <!&#91;endif&#93;-->
+</head>
+<body>
+  <h1>ユーザ登録</h1>
+
+  <form action="">
+    <p><label for="uid">ユーザ番号：</label>
+    <input type="text" name="uid" id="uid" required></p>
+
+    <fieldset><legend>端末情報</legend>
+      <p><label for="kind">種類：</label>
+      <select name="kind" id="kind" required>
+        <option value="ble">BLE</option>
+        <option value="wifi">Wi-Fi</option>
+      </select></p>
+
+      <p><label for="id">ID：</label>
+      <input type="text" name="id" id="id" required></p>
+    </fieldset>
+
+    <p><input type="submit" name="submit" value="送信"></p>
+  </form>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>passby registration</title>
+  <!--&#91;if lt IE 9&#93;>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <!&#91;endif&#93;-->
+  <script type="text/javascript" src="/js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="/js/api_accessor.js"></script>
+</head>
+<body>
+  <h1>すれちがい登録</h1>
+
+  <section>
+  <form id="create_passby">
+    <p><label for="csv">CSVファイル：</label>
+    <input type="file" name="file" id="file" multiple>
+    </p>
+
+    <p><input type="button" name="post" value="登録" onclick="createPassings()"></p>
+  </form>
+  </section>
+
+</body>
+</html>

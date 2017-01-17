@@ -1,0 +1,7 @@
+development:
+  adapter: mysql2
+  database: passby_without
+  host: localhost
+  username: root
+  password:
+  encoding: utf8
