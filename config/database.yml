@@ -1,7 +1,7 @@
 development:
   adapter: mysql2
   database: passby_without
-  host: localhost
+  host: db 
   username: root
-  password:
+  password: kenjiro
   encoding: utf8

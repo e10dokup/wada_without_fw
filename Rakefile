@@ -1,3 +1,6 @@
+require 'sinatra/activerecord'
+require 'sinatra/activerecord/rake'
+
 NAME = 'passby_without_wada'
 CONTAINER_RUBY_VERSION = '2.3.0' # Keep the same value as the Dockerfile
 

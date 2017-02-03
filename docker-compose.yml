@@ -1,0 +1,22 @@
+version: '2'
+services:
+  app:
+    build: .
+    command: ruby app.rb -o 0.0.0.0
+    links:
+      - db
+    ports:
+      - "50023:4567"
+    environment:
+      MYAPP_DATABASE_USERNAME: root
+      MYAPP_DATABASE_PASSWORD:  
+      MYAPP_DATABASE_HOST: db
+  db:
+    image: mysql
+    environment: 
+      MYSQL_ROOT_PASSWORD: kenjiro
+    volumes:
+      - db-data:/var/lib/mysql
+volumes:
+  db-data:
+    driver: local
